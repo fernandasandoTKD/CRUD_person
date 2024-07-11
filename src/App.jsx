@@ -17,16 +17,9 @@ function App() {
   return (
     <>
       <div className="container">
-        <div className="row">
-          {persons.map((person)=>{
-            return <Person 
-            key={person.id} 
-            name={person.name} 
-            img={person.img}
-            role={person.role}/>
-          })}
-        </div>
+        <div className="container">
         <People persons={persons} setPersons ={setPersons}/>
+        </div>
       </div>
     </>
   )
